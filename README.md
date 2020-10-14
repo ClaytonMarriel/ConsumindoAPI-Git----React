@@ -1,1 +1,3 @@
----> Configurando estrutura do projeto
+# Montando estrutura do projeto
+
+# Instalando e configurando EsLink Prettier e EditorConfig
