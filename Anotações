@@ -1,0 +1,26 @@
+-- Consumindo a API do gitHub
+
+1 -> Montado a estrutura do REACT
+
+2 -> Criando os componentes (Main / Repositorios)
+
+3 -> Estilizando o Main com Styled componentes
+ 3.1 -> No styled component a estilização é realizada em .js, onde dentro do component 'Main'
+     foram criados outros componentes como: Container, Form , Button... sendo assim a estilização
+     está sendo realizada de forma individual , sem que atrapalhe os outros componentes
+
+4 -> Dentro do Main foi criado uma classe que estendia o Component do React, para realizar e utilizar
+     os estados que seriam enviados e tratados através do formulário/input preenchido.
+
+5 -> Comunicação e busca na API com axios
+
+6 -> As informações salvas no state através do "data", buscando apenas o nome do repositório.
+
+7 -> Estilizado a estrutura do listar repositório, abaixo do formulário, criando um novo componente listar
+     para estilizar de forma independente.
+
+8 -> Configurando a página Repository, quando o usuário clicar em "detalhes", já é passado por parâmetro e carregado
+     o repositório com suas Issues.
+
+9 -> PropTypes, validação de propriedades.
+

@@ -2,9 +2,13 @@ import React, {Component} from 'react'
 
 import {FaGithubAlt, FaPlus, FaSpinner} from 'react-icons/fa'
 
+import {Link} from 'react-router-dom'
+
 import api from '../../services/api'
 
-import {Container, Form, SubmitButton, List} from './styles'
+import Container from '../../components/Container'
+
+import {Form, SubmitButton, List} from './styles'
 
 export default class Main extends Component{
   //Armazenar dados do input do usuário
@@ -13,6 +17,27 @@ export default class Main extends Component{
     repositories:[],
     loading: false,
   }
+
+  //Componente que carrega os dados do localStorage
+  componentDidMount(){
+    const repositories = localStorage.getItem('repositories')
+
+    if(repositories){
+      this.setState({repositories: JSON.parse(repositories)})
+    }
+
+  }
+
+  //Componente que salva os dados do localStorage
+  componentDidUpdate(_, prevState){
+    const {repositories} = this.state
+
+    if(prevState.repositories !== repositories){
+      localStorage.setItem('repositories', JSON.stringify(repositories))
+    }
+  }
+
+
 
   //Através dessa função
   //Está armazenando o valor do input
@@ -78,7 +103,7 @@ export default class Main extends Component{
       {repositories.map(repository =>(
         <li key={repository.name}>
           <span>{repository.name}</span>
-          <a href="">Detalhes</a>
+          <Link to={`/repository/${encodeURIComponent(repository.name)}`}>Detalhes</Link>
         </li>
       ))}
       </List>
