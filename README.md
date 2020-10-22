@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-# Montando estrutura do projeto
+Consumindo API do GitHub com React
 
-# Instalando e configurando EsLink Prettier e EditorConfig
+--Componentização
+--Estado
+--React-router-dom
+--Styled-Components
 
-# Adicionando repositórios
-=======
---- Montando estrutura do projeto
->>>>>>> 9e37084cf8be550c232c46f6492515408319fc0f
