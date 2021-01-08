@@ -1,7 +1,8 @@
-Consumindo API do GitHub com React
+<h1>Consumindo API do GitHub com React</h1>
 
+<h2>
 --Componentização
---Estado
---React-router-dom
+--State
+--React-Router-Dom
 --Styled-Components
-
+</h2>
